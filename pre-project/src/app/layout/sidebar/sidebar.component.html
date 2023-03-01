@@ -1,0 +1,13 @@
+<div class="sidebar">
+	<!-- <nav>
+		<ul>
+		  <li><a routerLink="/page-a" routerLinkActive="active" ariaCurrentWhenActive="page">Page A</a></li>
+		  <li><a routerLink="/page-b" routerLinkActive="active" ariaCurrentWhenActive="page">Page B</a></li>
+		  <li><a routerLink="/page-b" routerLinkActive="active" ariaCurrentWhenActive="page">Page C</a></li>
+		</ul>
+	  </nav> -->
+
+	  <div *ngFor="let menu of menus">
+		<p><a [routerLink]="[menu.path]">{{menu.name}}</a></p>
+	</div>
+</div>
